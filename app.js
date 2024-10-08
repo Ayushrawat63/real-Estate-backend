@@ -11,7 +11,7 @@ const testRouter = require("./routes/test_routes");
 const chatRouter = require("./routes/chat_routes");
 const messageRouter = require("./routes/message_routes");
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
