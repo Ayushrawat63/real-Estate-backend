@@ -11,7 +11,7 @@ const testRouter = require("./routes/test_routes");
 const chatRouter = require("./routes/chat_routes");
 const messageRouter = require("./routes/message_routes");
 
-app.use(cors({ origin: "*", credentials: true }));
+app.use(cors({ origin: "https://boisterous-sawine-38f5a7.netlify.app", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
