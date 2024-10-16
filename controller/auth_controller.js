@@ -50,8 +50,8 @@ const loginUser = async (req, res) => {
     const {password:userpassword,...userinfo}=user
     return res
       .cookie("jwtToken", token, {
-        httpOnly: true,
-        // secure: true, only for https request
+        // httpOnly: true,
+        secure: true, //only for https request
         maxAge: age,  // session expire time
       })
       .status(200)
